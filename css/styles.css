@@ -133,7 +133,8 @@ img {
   background-image: linear-gradient( rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  block-size: cover;
+  max-width: 1440px;
+  background-size: cover;
   padding: 188px 188px;
 }
 
@@ -167,6 +168,7 @@ img {
   gap: 10px;
   border-radius: 4px;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-page-btn:hover { 
@@ -176,14 +178,8 @@ img {
 .main-page-btn:focus {
   background-color: #404BBF;
 }
-
-.icon-list {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 8px;
-}
-.icon-item {
-width: 264px;
+.page-skils-container {
+  width: 264px;
 height: 112px;
 border-radius: 4px;
 border: 1px solid #8E8F99;
@@ -191,7 +187,9 @@ background: #F4F4FD;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-bottom: 8px;
 }
+
 
 .item-skils-icon {
 width: 64px;
@@ -283,17 +281,17 @@ margin-bottom: 8px;
   text-align: center;
 }
 .team-soc-list{
- 
-  margin-top: 8px;
+ margin-top: 8px;
   display: flex;
 gap: 24px;
 align-items: center;
     justify-content: center;
-  
-  
+  }
 
-}
 .team-soc-item{
+  
+}
+.team-soc-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -301,8 +299,6 @@ align-items: center;
   display: flex;
   align-items: center;
     justify-content: center;
-}
-.team-soc-link {
 
 }
 .team-soc {
