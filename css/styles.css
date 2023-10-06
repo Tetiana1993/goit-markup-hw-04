@@ -99,7 +99,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.menu-link:active:after {
+.menu-link:active::after {
   content: "";
 position: absolute; 
 width: 66px;
@@ -307,21 +307,23 @@ align-items: center;
   }
 
 .team-soc-item{
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .team-soc-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #4D5AE5;
+  background: #4D5AE5;
   display: flex;
   align-items: center;
     justify-content: center;
+    }
 
-}
+    .team-soc-link:hover {
+      background-color: #31D0AA;
+
+    }
 .team-soc {
-  width: 16px;
-  height: 16px; 
   fill: #F4f4fd;
 }
 .portfolio {
