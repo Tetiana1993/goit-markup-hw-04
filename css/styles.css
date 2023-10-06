@@ -91,6 +91,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover {
@@ -117,6 +120,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
+  padding: 24px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
@@ -129,13 +136,14 @@ img {
 }
 
 .main-page {
+  max-width: 1440px;
   background:#2E2F42;
   background-image: linear-gradient( rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1440px;
   background-size: cover;
   padding: 188px 188px;
+  margin: auto;
 }
 
 .main-page-title {
@@ -190,11 +198,6 @@ justify-content: center;
 margin-bottom: 8px;
 }
 
-
-.item-skils-icon {
-width: 64px;
-height: 64px;
-}
 
 .page-skils {
   background: #FFF;
