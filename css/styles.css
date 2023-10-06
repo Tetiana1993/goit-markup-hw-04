@@ -4,6 +4,9 @@ body {
   color: #434455;
 }
 
+::after {
+  box-sizing: border-box;}
+
 ul {
   list-style: none;
 }
@@ -94,6 +97,18 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+.menu-link:active:after {
+  content: "";
+position: absolute; 
+width: 66px;
+height: 4px;
+border-radius: 2px;
+background: #404BBF;
+left: 0;
+bottom: -1px;
+
 }
 
 .menu-link:hover {
