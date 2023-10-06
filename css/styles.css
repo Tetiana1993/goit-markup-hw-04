@@ -87,6 +87,7 @@ img {
 .menu-item {
 }
 
+
 .menu-link {
   color: #2E2F42;
   font-weight: 500;
@@ -97,12 +98,18 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
+  
 }
-.menu-link:hover::after {
+
+.current {
+  position: relative;
+  color: #404bbf;
+  }
+  
+.current::after {
   content: "";
 position: absolute; 
-width: 66px;
+width: 48px;
 height: 4px;
 border-radius: 2px;
 background: #404BBF;
@@ -111,13 +118,7 @@ bottom: -1px;
 
 }
 
-.menu-link:hover {
-  color: #404BBF;
-}
 
-.menu-link:focus {
-  color: #404BBF;
-}
 
 .contact {
   }
@@ -313,18 +314,18 @@ align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #31D0AA; 
+  background: #4D5AE5; 
   display: flex;
   align-items: center;
     justify-content: center;
     }
 
     .team-soc-link:hover {
-      background-color: #4D5AE5;
+      background-color: #404BBF;
     }
 
     .team-soc-link:focus {
-      background-color: #4D5AE5;
+background-color: #404BBF;
     }
 .team-soc {
   fill: #F4f4fd;
