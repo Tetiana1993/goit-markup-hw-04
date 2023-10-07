@@ -311,6 +311,7 @@ align-items: center;
 .team-soc-item{
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
 .team-soc-link {
   width: 40px;
   height: 40px;
@@ -319,12 +320,18 @@ align-items: center;
   display: flex;
   align-items: center;
     justify-content: center;
-    }
+  } 
 
-    
-  
 .team-soc {
   fill: #F4f4fd;
+}
+
+.team-soc-link:hover {
+  background-color: #404BBF;
+}
+
+.team-soc-link:focus {
+background-color: #404BBF;
 }
 .portfolio {
   background: #FFF;
@@ -425,6 +432,7 @@ align-items: baseline;
 
 .footer-link-deskr {
 }
+
 .footer-soc-container {
 margin-left: 120px;
 }
